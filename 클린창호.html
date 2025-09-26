@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="naver-site-verification" content="0e0e6f1facdadea0ede40b2eb1b59f8662915b8f" />
+    <meta name="google-site-verification" content="S3k9eu2pwpdstCXBlPxbh9c7_asI9uNvD7YzV1wZ93w" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클린창호 - 미세 방충망 전문 시공</title>
+    
+    <meta name="description" content="미세 방충망 및 블랙스텐 전문 클린창호입니다. 대구, 경북, 경남 전역에 친절하고 꼼꼼한 시공을 약속드립니다.">
+    <meta property="og:title" content="클린창호 - 미세 방충망 전문 시공">
+    <meta property="og:description" content="미세 방충망 및 블랙스텐 전문 클린창호입니다. 대구, 경북, 경남 전역에 친절하고 꼼꼼한 시공을 약속드립니다.">
+    <meta property="og:url" content="https://clean-changho.github.io/">
+    <meta property="og:image" content="https://clean-changho.github.io/시공후.jpg">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17565220897"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17565220897');
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reverted Colors & Danggeun Style Layout */
+        :root {
+            --primary-blue: #2c3e50;
+            --secondary-blue: #4a6580;
+            --highlight-yellow: #ffcc00;
+            --call-to-action-red: #e74c3c;
+            --call-to-action-red-dark: #c0392b;
+            --text-color: #333;
+            --light-gray: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-gray);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 헤더 스타일 */
+        header {
+            background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: var(--highlight-yellow);
+            font-weight: 900;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #f1f1f1;
+            white-space: nowrap;
+        }
+        
+        .call-btn {
+            background: var(--call-to-action-red);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+        }
+        
+        .call-btn:hover {
+            background: var(--call-to-action-red-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(231, 76, 60, 0.4);
+        }
+        
+        /* 히어로 섹션 */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1620336655055-bd87ca8f1370?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+        
+        .hero-content h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            line-height: 1.3;
+            font-weight: 800;
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        
+        .highlight {
+            color: var(--highlight-yellow);
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .phone-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--highlight-yellow);
+            margin: 20px 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--highlight-yellow);
+            color: var(--primary-blue);
+            padding: 16px 45px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 15px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 2px solid var(--highlight-yellow);
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: var(--highlight-yellow);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* 혜택 배너 */
+        .promo-banner {
+            background: linear-gradient(to right, var(--call-to-action-red), var(--call-to-action-red-dark));
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+        
+        .promo-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .promo-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+        
+        /* 제품 장점 */
+        .benefits, .gallery, .location, .before-after-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .before-after-section {
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--primary-blue);
+            font-weight: 800;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 5px;
+            background: var(--highlight-yellow);
+            margin: 15px auto;
+            border-radius: 3px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 35px 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid var(--secondary-blue);
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .benefit-icon {
+            font-size: 55px;
+            color: var(--secondary-blue);
+            margin-bottom: 25px;
+        }
+        
+        .benefit-card h3 {
+            margin-bottom: 18px;
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* 갤러리 */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            height: 280px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: all 0.4s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* 시공 지역 */
+        .location {
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+        }
+        
+        .location .section-title {
+            color: white;
+        }
+        
+        .location-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .location-badge {
+            background: var(--highlight-yellow);
+            color: var(--primary-blue);
+            padding: 18px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* 문의 섹션 */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(to right, var(--secondary-blue), var(--primary-blue));
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-form {
+            max-width: 650px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary-blue);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--secondary-blue);
+            outline: none;
+        }
+        
+        .form-submit {
+            background: var(--call-to-action-red);
+            color: white;
+            border: none;
+            padding: 18px 35px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+        }
+        
+        .form-submit:hover {
+            background: var(--call-to-action-red-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+        }
+        
+        /* 푸터 */
+        footer {
+            background: #1a2530;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            color: var(--highlight-yellow);
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        
+        .footer-section p {
+            margin-bottom: 12px;
+            color: #ccc;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+        
+        /* 신규 추가: 고정 전화 버튼 */
+        .floating-call {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            width: 70px;
+            height: 70px;
+            background: var(--call-to-action-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.5);
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* 신규 추가: 신뢰 요소 배지 */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .trust-badge {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 180px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .trust-badge i {
+            font-size: 40px;
+            color: var(--secondary-blue);
+            margin-bottom: 15px;
+        }
+        
+        .trust-badge span {
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-align: center;
+        }
+        
+        /* 새로운 시공 전/후 섹션 스타일 */
+        .before-after-section {
+            background: var(--light-gray);
+            text-align: center;
+        }
+
+        .before-after-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .before-after-item {
+            display: flex;
+            gap: 15px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .before-after-item:hover {
+            transform: translateY(-8px);
+        }
+
+        .image-box {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+            z-index: 10;
+        }
+
+        .before-label {
+            background-color: var(--call-to-action-red);
+        }
+
+        .after-label {
+            background-color: var(--primary-blue);
+        }
+        
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem; /* 폰트 크기 조정 */
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem; /* 폰트 크기 조정 */
+            }
+            
+            .phone-number {
+                font-size: 1.5rem; /* 폰트 크기 조정 */
+            }
+            
+            .btn {
+                padding: 14px 30px;
+                font-size: 1.1rem;
+                margin: 10px 5px;
+            }
+            
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .promo-text {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .trust-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .trust-badge {
+                width: 100%; /* 고정 너비를 유동적으로 변경 */
+                max-width: 180px; /* 최대 너비는 유지 */
+            }
+            
+            .before-after-item {
+                flex-direction: column;
+                width: 100%;
+                max-width: 320px;
+                padding: 15px;
+            }
+            .image-box {
+                width: 100%; /* 고정 너비를 유동적으로 변경 */
+                height: 250px;
+            }
+
+            .benefits-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr; /* 모바일에서 한 줄에 하나씩만 표시 */
+            }
+
+            /* 모바일 반응형 */
+            .logo-area {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            .tagline {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .phone-number {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo">클린<span>창호</span></div>
+                <div class="tagline">미세 방충망 · 블랙스텐 시공 전문</div>
+            </div>
+            <a href="tel:01026687395" class="call-btn"><i class="fas fa-phone"></i> 상담전화: 010-2668-7395</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>미세 방충망 및 블랙스텐 전문 클린창호<br>꼼꼼한 시공에 친절함을 더하다</h1>
+            <p style="color: var(--highlight-yellow); font-weight: bold;">아래 시공 사진을 참조해주세요</p>
+            <div class="phone-number">Tel: 010-2668-7395</div>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn"><i class="fas fa-calendar-check"></i> 무료 방문 견적 받기</a>
+                <a href="tel:01026687395" class="btn"><i class="fas fa-phone"></i> 전화 상담하기</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="before-after-section">
+        <div class="container">
+            <h2 class="section-title">깔끔해진 창문을 직접 확인하세요!</h2>
+            <div class="before-after-wrapper">
+                <div class="before-after-item">
+                    <div class="image-box">
+                        <img src="https://i.imgur.com/qXU7tFo.jpg" alt="시공 전 방충망" class="before-img">
+                        <div class="label before-label">시공 전</div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://i.imgur.com/zCfpnOy.jpg" alt="시공 후 미세 방충망" class="after-img">
+                        <div class="label after-label">시공 후</div>
+                    </div>
+                </div>
+                <div class="before-after-item">
+                    <div class="image-box">
+                        <img src="https://i.imgur.com/XYJqGFh.jpg" alt="시공 전 낡은 창문" class="before-img">
+                        <div class="label before-label">시공 전</div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://i.imgur.com/EHwPmNE.jpeg" alt="시공 후 깨끗한 창문" class="after-img">
+                        <div class="label after-label">시공 후</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">클린창호 실제 시공 사례</h2>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 30px; color: #666; font-size: 1.2rem;">믿을 수 있는 클린창호의 깔끔한 시공 결과를 직접 확인하세요!</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://i.imgur.com/MGDmDsp.jpeg');"></div>
+                <div class="gallery-item" style="background-image: url('https://i.imgur.com/u5cibpa.jpeg');"></div>
+                <div class="gallery-item" style="background-image: url('https://i.imgur.com/p25v8lm.jpeg');"></div>
+                <div class="gallery-item" style="background-image: url('https://i.imgur.com/ulm2b3F.jpeg');"></div>
+                <div class="gallery-item" style="background-image: url('https://i.imgur.com/QzIZt5q.jpeg');"></div>
+                <div class="gallery-item" style="background-image: url('https://i.imgur.com/GYWMnJG.jpeg');"></div>
+            </div>
+        </div>
+    </section>
+    <section class="promo-banner">
+        <div class="container promo-content">
+            <div class="promo-text">
+                <span class="highlight">특별 할인 혜택</span>과 함께<br>
+                <span class="highlight">모헤어 & 풍지판 무상 교체</span>까지!
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">클린창호만의 특별한 장점</h2>
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-clipboard-check"></i>
+                    <span>3년 품질 보증</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-user-tie"></i>
+                    <span>전문 기술자 시공</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-truck"></i>
+                    <span>무료 방문 견적</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-medal"></i>
+                    <span>국산 고급 소재</span>
+                </div>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-tags"></i></div>
+                    <h3>기간 한정 할인 혜택</h3>
+                    <p>지금 문의하시면 특별 할인된 가격으로 클린창호의 서비스를 만나보세요!</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-wrench"></i></div>
+                    <h3>모헤어 무상 교체</h3>
+                    <p>방충망 교체 시 오래된 모헤어(털)를 새것으로 무상 교체해 드립니다.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-wind"></i></div>
+                    <h3>풍지판 무상 교체</h3>
+                    <p>창문 틈새로 벌레 유입을 막는 풍지판도 새것으로 무상 교체해 드립니다.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-bug"></i></div>
+                    <h3>벌레·모기 완전 차단</h3>
+                    <p>초미세망 기술로 작은 벌레와 모기도 완벽하게 차단하여 안심할 수 있습니다.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-tools"></i></div>
+                    <h3>전문가 정밀 시공</h3>
+                    <p>경험 풍부한 전문 기술자가 꼼꼼하고 정밀하게 시공합니다.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-award"></i></div>
+                    <h3>3년 품질 보증</h3>
+                    <p>3년간의 품질 보증으로 설치 후에도 안심하고 사용하실 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="container">
+            <h2 class="section-title">클린창호 시공 가능 지역</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">대구, 경북, 경남 전역으로 신속하게 방문 시공 가능합니다.</p>
+            <div class="location-badges">
+                <div class="location-badge">대구 전역</div>
+                <div class="location-badge">경북 전역</div>
+                <div class="location-badge">경남 전역</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">무료 방문 견적 신청</h2>
+            <p style="margin-bottom: 40px; font-size: 1.2rem;">지금 바로 문의주시면 30분 내로 친절하게 연락드립니다!</p>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" placeholder="이름을 입력해주세요" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" placeholder="연락처를 입력해주세요" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">주소</label>
+                        <input type="text" id="address" placeholder="시공 받으실 주소를 입력해주세요">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">특별 요청사항 (선택)</label>
+                        <textarea id="message" placeholder="특별한 요청사항이 있다면 적어주세요"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">무료 견적 요청하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>클린창호</h3>
+                    <p>미세 방충망 전문 시공업체 클린창호. 꼼꼼한 시공과 친절한 상담으로 고객님께 만족을 드립니다.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>연락처</h3>
+                    <p><i class="fas fa-phone"></i> 010-2668-7395</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 대구시 수성구 지산동 761 (대표 사무실)</p>
+                </div>
+                <div class="footer-section">
+                    <h3>시공 지역</h3>
+                    <p>대구 전역 · 경북 전역 · 경남 전역</p>
+                    <p>방문 상담 및 무료 견적 가능</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 클린창호. All Rights Reserved.</p>
+             </div>
+        </div>
+    </footer>
+
+    <a href="tel:01026687395" class="floating-call">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <script>
+        // 폼 제출 처리
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // 기본 폼 제출 방지
+            
+            // 간단한 유효성 검사
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            
+            if (!name || !phone) {
+                alert('이름과 연락처는 필수 입력 항목입니다.');
+                return;
+            }
+            
+            // 실제 서비스에서는 여기에 서버로 데이터를 전송하는 코드를 추가해야 합니다
+            // 예: fetch API를 사용한 AJAX 요청
+            
+            // 임시로 카카오톡 메시지 전송 링크 생성 (실제로는 서버 연동 필요)
+            const message = `클린창호 견적 문의%0A%0A이름: ${name}%0A연락처: ${phone}%0A주소: ${document.getElementById('address').value || '미기입'}%0A요청사항: ${document.getElementById('message').value || '없음'}`;
+            const kakaoLink = `https://open.kakao.com/o/someChatLink?text=${message}`;
+            
+            // 실제 서비스에서는 아래 코드를 사용하여 카카오톡으로 연결
+            // window.open(kakaoLink, '_blank');
+            
+            alert('클린창호에 견적 요청이 성공적으로 접수되었습니다. 빠른 시일 내로 연락드리겠습니다. 감사합니다!');
+            this.reset(); // 폼 초기화
+        });
+        
+        // 스크롤 시 헤더 스타일 변경
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'var(--primary-blue)';
+                header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.2)';
+            } else {
+                header.style.background = 'linear-gradient(to right, var(--primary-blue), var(--secondary-blue))';
+                header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.2)';
+            }
+        });
+    </script>
+</body>
+</html>
